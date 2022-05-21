@@ -1,37 +1,21 @@
 ---
-title: "Introduction"
-metaTitle: "This is the title tag of this page"
-metaDescription: "This is the meta description"
+title: 'Introduction'
+metaTitle: 'Introduction / Intro to Programming'
+metaDescription: 'This is the meta description'
 ---
 
-Some introduction text. Lists out all the headings from h1 to h6. Markdown link handling for relative and absolute URLs. Easy to customise.
+# What should everyone expect in this course?
 
-# Heading H1
-Heading 1 text
+Hola! Welcome to this course entitled Intro to Programming! In this course, you will learn the fundamentals of programming. We will tackle the basic skills needed to get started in your programming career. You are not expected become a wizard coder at the end of this course, but hopefully you will understand and be equip with the problem-solving skills and computational thinking when learning more advanced topics. By the end of this course, you should be able to solve basic computing problems using fundamental concepts in computer programming such as I/O services, data types, conditionals, loops, data structures, and command line interfaces.
 
-## Heading H2
-Heading 2 text
+# Who is this course for?
 
-### Heading H3
-Heading 3 text
+Everyone is welcome to this course! This course was built mainly for beginners who are interested in computer science but do not have hands-on experience on what programming is all about. This is also great for those students who wants to have a refresher with the fundamentals of programming. In short, if you want to learn the basics of programming and you do not have an idea to get started, this course is perfect for you!
 
-#### Heading H4
-Heading 4 text
+# Why does this course matter?
 
-##### Heading H5
-Heading 5 text
+I built this course because I believe in the power of self-learning and open-source education. Everyone should have an access to learning materials without even spending money. As a Filipino citizen, in line with the AmBisyon Natin 2040, I dedicate the creation of this course to offer life-long learning opportunities for my fellow countrymen. Helping them to equip skills needed in this fast-evolving community is one of my greatest motivation.
 
-###### Heading H6
-Heading 6 text
+# What motivates me to create this course?
 
-## Lists
-- Item 1
-- Item 2
-- Item 3
-- Item 4
-- Item 5
-
-## Links
-
-* Relative: [Codeblock](/codeblock)
-* Absolute: [Demo](https://learn.hasura.io/graphql/react)
+Hi! I am Von Divino, a 2nd year Computer Science student of the University of the Philippines - Los Baños. As a computer science student, I truly believe that I should give back to my community on what I learned in my school. Everyone should have an access to open-source learning materials. What motivates to create this course is that I love sharing my knowledge to people especially when it comes to computing and software engineering topics.
