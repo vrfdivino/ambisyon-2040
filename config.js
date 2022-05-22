@@ -39,10 +39,14 @@ const config = {
   sidebar: {
     forcedNavOrder: [
       '/introduction', // add trailing slash if enabled above
-      '/codeblock',
+      '/setup',
+      '/io',
+      '/data-types',
+      '/functions',
     ],
     collapsedNav: [
-      '/codeblock', // add trailing slash if enabled above
+      // '/codeblock', // add trailing slash if enabled above
+      // '/data-types',
     ],
     links: [{ text: 'Hasura', link: 'https://hasura.io' }],
     frontline: false,
