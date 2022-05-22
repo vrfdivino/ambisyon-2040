@@ -33,7 +33,7 @@ I assume that you completed the instructions above to setup your Repl editor. Ri
 
 To get started, click the `main.py` file. In your `editor`, type this awesome line of code:
 
-```python3
+```python
 print("Hello, World!")
 ```
 

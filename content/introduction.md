@@ -2,6 +2,7 @@
 title: 'Introduction'
 metaTitle: 'Introduction / Intro to Programming'
 metaDescription: 'This is the meta description'
+order: 1
 ---
 
 # What should everyone expect in this course?
