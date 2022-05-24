@@ -44,6 +44,7 @@ const config = {
       '/data-types',
       '/functions',
       '/conditionals',
+      '/loops',
     ],
     collapsedNav: [
       // '/codeblock', // add trailing slash if enabled above
