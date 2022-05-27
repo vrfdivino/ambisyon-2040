@@ -8,7 +8,7 @@ import { styles } from '../../custom/styles/styles';
 
 class ThemeProvider extends React.Component {
   state = {
-    isDarkThemeActive: false,
+    isDarkThemeActive: true,
   };
 
   componentDidMount() {
@@ -22,7 +22,7 @@ class ThemeProvider extends React.Component {
   };
 
   toggleActiveTheme = () => {
-    this.setState(prevState => ({ isDarkThemeActive: !prevState.isDarkThemeActive }));
+    this.setState((prevState) => ({ isDarkThemeActive: !prevState.isDarkThemeActive }));
 
     window.localStorage.setItem('isDarkThemeActive', JSON.stringify(!this.state.isDarkThemeActive));
   };
