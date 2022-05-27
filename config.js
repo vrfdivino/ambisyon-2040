@@ -47,6 +47,7 @@ const config = {
       '/loops',
       '/data-structures',
       '/project',
+      '/conclusion',
     ],
     collapsedNav: [
       // '/codeblock', // add trailing slash if enabled above
