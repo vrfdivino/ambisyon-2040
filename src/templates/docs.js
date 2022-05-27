@@ -21,18 +21,19 @@ export default class MDXRuntimeTest extends Component {
       allMdx,
       mdx,
       site: {
-        siteMetadata: { docsLocation, title },
+        siteMetadata: { title },
       },
     } = data;
 
+    const docsLocation = 'https://github.com/vrfdivino/ambisyon-2040/tree/main/content';
     const githubIcon = require('../components/images/github.svg').default;
     const navItems = allMdx.edges
       .map(({ node }) => node.fields.slug)
-      .filter(slug => slug !== '/')
+      .filter((slug) => slug !== '/')
       .sort()
       .reduce(
         (acc, cur) => {
-          if (forcedNavOrder.find(url => url === cur)) {
+          if (forcedNavOrder.find((url) => url === cur)) {
             return { ...acc, [cur]: [cur] };
           }
 
@@ -42,7 +43,7 @@ export default class MDXRuntimeTest extends Component {
             prefix = prefix + '/';
           }
 
-          if (prefix && forcedNavOrder.find(url => url === `/${prefix}`)) {
+          if (prefix && forcedNavOrder.find((url) => url === `/${prefix}`)) {
             return { ...acc, [`/${prefix}`]: [...acc[`/${prefix}`], cur] };
           } else {
             return { ...acc, items: [...acc.items, cur] };
@@ -56,7 +57,7 @@ export default class MDXRuntimeTest extends Component {
         return acc.concat(navItems[cur]);
       }, [])
       .concat(navItems.items)
-      .map(slug => {
+      .map((slug) => {
         if (slug) {
           const { node } = allMdx.edges.find(({ node }) => node.fields.slug === slug);
 
@@ -111,7 +112,7 @@ export default class MDXRuntimeTest extends Component {
 }
 
 export const pageQuery = graphql`
-  query($id: String!) {
+  query ($id: String!) {
     site {
       siteMetadata {
         title

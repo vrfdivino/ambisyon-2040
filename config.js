@@ -1,15 +1,14 @@
 const config = {
   gatsby: {
     pathPrefix: '/',
-    siteUrl: 'https://hasura.io',
+    siteUrl: 'https://juan-learns-to-code.netlify.app/',
     gaTrackingId: null,
     trailingSlash: false,
   },
   header: {
-    logo: 'https://graphql-engine-cdn.hasura.io/learn-hasura/assets/homepage/brand.svg',
-    logoLink: 'https://hasura.io/learn/',
-    title:
-      "<a href='https://hasura.io/learn/'><img class='img-responsive' src='https://graphql-engine-cdn.hasura.io/learn-hasura/assets/homepage/learn-logo.svg' alt='Learn logo' /></a>",
+    logo: '<p>Juan Learns to Code</p>',
+    logoLink: 'https://juan-learns-to-code.netlify.app/',
+    title: 'asdff',
     githubUrl: 'https://github.com/vrfdivino/ambisyon-2040',
     helpUrl: '',
     tweetText: '',
@@ -40,17 +39,16 @@ const config = {
       // '/codeblock', // add trailing slash if enabled above
       // '/data-types',
     ],
-    links: [{ text: 'Hasura', link: 'https://hasura.io' }],
+    links: [{ text: 'Edit in Github', link: 'https://github.com/vrfdivino/ambisyon-2040' }],
     frontline: false,
     // ignoreIndex: true,
-    title:
-      "<a href='https://hasura.io/learn/'>graphql </a><div class='greenCircle'></div><a href='https://hasura.io/learn/graphql/react/introduction/'>react</a>",
+    title: '<p>Intro to Programming</p>',
   },
   siteMetadata: {
-    title: 'Gatsby Gitbook Boilerplate | Hasura',
+    title: 'Intro to Programming / Juan Learns to Code',
     description: 'Documentation built with mdx. Powering hasura.io/learn ',
     ogImage: null,
-    docsLocation: 'https://github.com/hasura/gatsby-gitbook-boilerplate/tree/master/content',
+    docsLocation: 'https://juan-learns-to-code.netlify.app/',
     favicon: 'https://graphql-engine-cdn.hasura.io/img/hasura_icon_black.svg',
   },
   pwa: {

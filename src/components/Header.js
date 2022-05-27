@@ -53,6 +53,17 @@ const StyledBgDiv = styled('div')`
   }
 `;
 
+const StyledLogo = styled.p`
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  transition: 0.3s;
+
+  &:hover {
+    leter-spacing: 1.4px;
+  }
+`;
+
 const Header = ({ location, isDarkThemeActive, toggleActiveTheme }) => (
   <StaticQuery
     query={graphql`
@@ -86,39 +97,37 @@ const Header = ({ location, isDarkThemeActive, toggleActiveTheme }) => (
 
       const {
         site: {
-          siteMetadata: { headerTitle, githubUrl, helpUrl, tweetText, logo, headerLinks },
+          siteMetadata: { headerTitle, helpUrl, tweetText, logo, headerLinks },
         },
       } = data;
 
-      const finalLogoLink = logo.link !== '' ? logo.link : 'https://hasura.io/';
+      const githubUrl = 'https://github.com/vrfdivino/ambisyon-2040';
+
+      const finalLogoLink = 'https://juan-learns-to-code.netlify.app/';
 
       return (
         <div className={'navBarWrapper'}>
           <nav className={'navBarDefault'}>
             <div className={'navBarHeader'}>
               <Link to={finalLogoLink} className={'navBarBrand'}>
-                <img
-                  className={'img-responsive displayInline'}
-                  src={logo.image !== '' ? logo.image : logoImg}
-                  alt={'logo'}
-                />
+                <StyledLogo>Juan Learns to Code </StyledLogo>
               </Link>
-              <div
+              {/* <div
                 className={'headerTitle displayInline'}
                 dangerouslySetInnerHTML={{ __html: headerTitle }}
-              />
+              /> */}
             </div>
-            {config.header.social ? (
+            {/* {config.header.social ? (
               <ul
                 className="socialWrapper visibleMobileView"
                 dangerouslySetInnerHTML={{ __html: config.header.social }}
               ></ul>
-            ) : null}
-            {isSearchEnabled ? (
+            ) : null} */}
+            {/* {isSearchEnabled ? (
               <div className={'searchWrapper hiddenMobile navBarUL'}>
                 <LoadableComponent collapse={true} indices={searchIndices} />
               </div>
-            ) : null}
+            ) : null} */}
             <div id="navbar" className={'topnav'}>
               <div className={'visibleMobile'}>
                 <Sidebar location={location} />
